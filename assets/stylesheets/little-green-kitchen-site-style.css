@@ -1,0 +1,390 @@
+.colored-box {
+    border-radius: 3px;
+    color: #F5F5F5;
+    background-color: #568d55;
+}
+
+.colored-pencil-box {
+    border-radius: 3px;
+    color: #F5F5F5;
+    background-image: url('/images/green-pencil-texture.png');
+    background-size: cover;
+}
+
+
+
+
+
+.colored-border-box {
+    border-radius: 3px;
+    border: 2px solid #568d55;
+}
+
+
+.padding-box {
+    padding: 15px;
+}
+
+.instagram:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+}
+
+footer.footer {
+    background-color: #f7e8e1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr.sep {
+    border-top: 2px solid #f7e8e1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #393e46;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 0 30%; /* Anpassen der Breite der Boxen */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+
+.stars {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+
+.stars i {
+    color: gold;
+}
+
+.stars-text {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.rezension-box {
+    border: 2px solid #568d55; /* Grüne Umrandung */
+    border-radius: 3px;
+    background-color: #f7e8e1; /* Leichtes Rosa */
+}
+
+.rezension-text {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+p.aktuell-datum {
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 0px;
+    margin: 0px;
+}
+
+hr.rezension-sep {
+    border-top: 2px solid #568d55;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-custom {
+  display: inline-block;
+  font-weight: 400;
+  color: #F5F5F5;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #568d55;
+  border: 1px solid #4b7f49;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #4b7f49;
+  border-color: #3f723e;
+}
+
+
+.btn-link {
+  display: inline-block;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cookie-banner {
+    display: block; /* Initially hide the div */
+    position: fixed !important; /* Stick to the viewport */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    color: white;
+    background-color: rgb(54, 69, 79);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999    ;
+    font-size: 70%
+}
+
+
+/* Image-sizes */
+img.max200 {
+    width:100%;
+    max-width:200px;
+}
+
+.max420 {
+    width:100%;
+    max-width:420px;
+}
+
+img.maxHeight500 {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover; /* Das Bild wird nicht verzerrt, abgeschnitten und passt in den Container */
+}
+
+
+
+
+
+
+/* Gallery */
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px; /* Standard-Abstand zwischen den Bildern */
+    }
+
+    .gallery-item {
+      width: 200px; /* Quadratische Breite */
+      height: 200px; /* Quadratische Höhe */
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .pagination button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #f7e8e1;
+      transition: background-color 0.3s ease;
+    }
+
+    .pagination button:hover {
+      background-color: #4b7f49;
+    }
+
+    .pagination button.active {
+      background-color: #568d55;
+      color: #f2f2f2;
+    }
+
+    .pagination button.active:hover {
+      background-color: #568b64;
+    }
+
+
+    @media screen and (max-width: 650px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 150px; /* Kleineres Quadrat in der Vorschau */
+        height: 150px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
+
+    @media screen and (max-width: 470px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 100px; /* Kleineres Quadrat in der Vorschau */
+        height: 100px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
+
+
+
+
+
+/* Startseite */
+
+.start-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Anpassung der Ausrichtung auf vertikal */
+  justify-content: center;
+  padding: 15px;
+}
+
+.index-noboxes {
+    text-align:center;
+    padding:0 10vw 0 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  /* Media Query für Bildschirmbreiten bis 768px (Tablets und Smartphones) */
+  .start-container {
+    flex-direction: column; /* Anpassung der Ausrichtung auf vertikal */
+  }
+
+  .index-noboxes {
+    padding: 0 3vw 0 3vw;
+  }
+}
+
+
+
+
+
+
+.image-container-startlogo {
+    text-align: center;
+}
+
+.image-container-startlogo img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .image-container-startlogo img {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+.container_wagen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pos-box {
+    flex-basis: calc(50% - 10px);
+}
+
+.wagen-box {
+    flex-basis: calc(50% - 10px); /* Each box takes half of the available space minus spacing */
+    border: 2px solid #568d55;
+    background-color: #f7e8e1;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.wagen-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.max {
+    width: 100%;
+    max-width: 40vw;
+}
+
+@media (min-width: 1000px) {
+    img.max {
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 700px) {
+  .wagen-box, .pos-box {
+    flex-basis: 100%; /* Each box takes full width on smaller screens */
+  }
+}
+
+.wagen {
+    transition: transform 0.3s;
+}
+
+.wagen:hover {
+    transform: scale(1.05);
+}

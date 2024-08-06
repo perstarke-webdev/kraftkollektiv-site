@@ -1,0 +1,92 @@
+---
+layout: home
+title: "Galerie"
+sub_title: "Verschaff dir ein paar Eindrücke :)"
+image: "/images/headers/header2.webp"
+permalink: "/galerie/"
+---
+
+<div class="gallery-container">
+    <!-- JavaScript füllt die Bilder hier ein -->
+</div>
+
+<ul class="pagination">
+    <!-- JavaScript füllt die Seitennummern hier ein -->
+</ul>
+<style>
+
+  </style>
+
+<script>
+    // JavaScript-Code zum Laden der Bilder in die Galerie
+    window.addEventListener('DOMContentLoaded', function () {
+      const galleryContainer = document.querySelector('.gallery-container');
+      const numImages = 41;
+      const imagesPerPage = 12;
+      const numPages = Math.ceil(numImages / imagesPerPage);
+      let currentPage = 1;
+
+      // Funktion zum Anzeigen der aktuellen Seite
+      function showPage(pageNumber) {
+        const startIndex = (pageNumber - 1) * imagesPerPage;
+        const endIndex = Math.min(startIndex + imagesPerPage, numImages);
+
+        galleryContainer.innerHTML = ''; // Galerie leeren
+
+        for (let i = startIndex; i < endIndex; i++) {
+          const thumbnailSrc = `/images/gallery/${i + 1}.webp`;
+          const originalSrc = `/images/gallery/${i + 1}.webp`;
+
+          const galleryItem = document.createElement('div');
+          galleryItem.classList.add('gallery-item');
+
+          const thumbnailLink = document.createElement('a');
+          thumbnailLink.href = originalSrc;
+          thumbnailLink.setAttribute('data-lightbox', 'gallery');
+
+          const thumbnailImg = document.createElement('img');
+          thumbnailImg.src = thumbnailSrc;
+          thumbnailImg.alt = `Bild ${i + 1}`;
+          thumbnailImg.loading = 'lazy';
+
+          thumbnailLink.appendChild(thumbnailImg);
+          galleryItem.appendChild(thumbnailLink);
+
+          galleryContainer.appendChild(galleryItem);
+        }
+      }
+
+      // Funktion zum Erstellen der Seitennummern
+      function createPagination() {
+        const paginationContainer = document.querySelector('.pagination');
+        paginationContainer.innerHTML = '';
+
+        for (let i = 1; i <= numPages; i++) {
+          const pageNumber = i;
+          const pageButton = document.createElement('button');
+          pageButton.textContent = pageNumber;
+
+          pageButton.addEventListener('click', function () {
+            currentPage = pageNumber;
+            showPage(currentPage);
+
+            // Aktiviere den ausgewählten Seitennummer-Button
+            const allButtons = document.querySelectorAll('.pagination button');
+            allButtons.forEach(button => {
+              button.classList.remove('active');
+            });
+            this.classList.add('active');
+          });
+
+          paginationContainer.appendChild(pageButton);
+        }
+
+        // Standardmäßig erste Seite anzeigen
+        showPage(currentPage);
+        const firstButton = document.querySelector('.pagination button');
+        firstButton.classList.add('active');
+      }
+
+      createPagination();
+    });
+  </script>
