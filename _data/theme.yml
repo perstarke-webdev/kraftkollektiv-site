@@ -50,9 +50,9 @@ google_fonts:
 
 navigation_pages:
   - index.html
-  - 05_standorte.html
   - 01_paket.html
-  - 02_catering.html
-  - 03_galerie.html
-  - 04_kontakt_anfahrt.html
+  - 02_ablauf_kontakt-html
+  - 03_mara.html
+  - 04_robert.html
+  - 05_kilian.html
 
