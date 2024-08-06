@@ -1,6 +1,6 @@
-# little green kitchen site
+# Kraftkollektiv Site
 
-Repository for the website for little green kitchen cgn
+Repository for the website for Kraftkollektiv Powerlifting Coaching
 
 ## Credits
 
@@ -8,4 +8,4 @@ Based upon [Jekyll](https://jekyllrb.org) and the [Basically Basic Theme](https:
 
 ## License
 This work is copyrighted - no parts of it may be copied, stored or otherwise re-used without prior written consent
-of the author [Per Starke](mailto:per@starke-team.de)
+of the author [Per Starke](mailto:info@perstarke-webdev.de)
