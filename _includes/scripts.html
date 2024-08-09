@@ -1,4 +1,13 @@
-<script async src="{{ '/assets/javascripts/main.js' | relative_url }}"></script>
+{% if site.footer_scripts %}
+  {% for script in site.footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% else %}
+  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% endif %}
 
-<script src="/assets/lightbox/dist/js/lightbox-plus-jquery.js"></script>
-
+{% if site.after_footer_scripts %}
+  {% for script in site.after_footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

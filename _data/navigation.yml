@@ -1,0 +1,17 @@
+# main links
+main:
+  - title: "Das Paket"
+    url: /paket
+    blank: false
+  - title: "Ablauf & Kontakt"
+    url: /kontakt
+    blank: false
+  - title: "Coach Mara"
+    url: /coach-mara
+    blank: false
+  - title: "Coach Robert"
+    url: /coach-robert
+    blank: false
+  - title: "Coach Kilian"
+    url: /coach-kilian
+    blank: false

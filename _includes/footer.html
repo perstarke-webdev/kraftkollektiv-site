@@ -1,16 +1,27 @@
-<footer id="footer" class="site-footer footer">
-  <div class="inner">
-    <br>
-    <a href="/imprint"
-           rel="noopener noreferrer nofollow"
-           target="_blank"><i class="fas fa-fw fa-gavel" style="color:#568d55;"></i> Impressum & Datenschutz</a>
-    <br>
-    <br>
-      &copy; {{ site.time | date: '%Y' }} {{ site.title }}.
-      Created by
-      <a rel="noopener noreferrer nofollow" target="_blank"href="https://perstarke-webdev.de/">
-        Per Starke Web Development</a>
-    <br>
-    <br>
+<div class="page__footer-follow">
+
+  <ul class="socials">
+
+    <li></li>
+
+    {% for link in site.footer.links %}
+    {% if link.url %}
+    <li class="socials__item">
+      <a href="{{link.url}}" rel="noopener noreferrer nofollow" target="_blank" class="socials__item__link" title="{{link.label}}">
+        <i class="{{link.icon}} footer-icon" aria-hidden="true"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    <li class="socials__item">
+      <a href="/imprint" rel="noopener noreferrer nofollow" target="_blank" class="socials__item__link" title="Imprint">
+        <i class="fas fa-gavel footer-icon" aria-hidden="true"></i>
+      </a>
+    </li>
+
+  </ul>
+
   </div>
-</footer>
+
+  <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.footer.copyright | default: site.title }}. {% if site.footer.creator %} Created by <a rel="noopener noreferrer nofollow" target="_blank"href="{{site.footer.creator.url}}">{{site.footer.creator.name}}</a>{% endif %}</div>

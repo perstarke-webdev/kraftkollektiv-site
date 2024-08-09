@@ -2,14 +2,12 @@
 layout: default
 ---
 
-{% include page-intro.html %}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
 
-<main id="main" class="page-content" aria-label="Content">
-  <div class="inner">
-    <article class="entry-wrap">
-      <div class="entry-content">
-        {{ content }}
-      </div>
-    </article>
-  </div>
-</main>
+<div id="main" role="main">
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+</div>
