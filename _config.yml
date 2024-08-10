@@ -41,7 +41,7 @@ footer:
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@Kraftkollektivpowerlifting"
     - label: "Per Starke Web Development"
-      icon: "fa fa-globe"
+      icon: "fa fa-laptop"
       url: "https://perstarke-webdev.de"
   copyright: "Kraftkollektiv" # Replace with your own
   creator: # Replace with your own creator name or remove this if you don't want any "created by" in the footer
