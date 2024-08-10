@@ -46,7 +46,8 @@
       }
 
         @if ($buttoncolor == light-outline) {
-          border: 1px solid #fff;
+          border: 1.5px solid mix(#fff, $link-color, 40%);
+          color: mix(#fff, $link-color, 40%) !important;
         }
 
       &:visited {
