@@ -12,6 +12,13 @@
     padding: 15px;
 }
 
+.facts-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 .alternative-color .box {
     background-color: rgba($background-color, 0.05);
 }
