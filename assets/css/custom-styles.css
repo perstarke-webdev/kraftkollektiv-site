@@ -26,3 +26,8 @@
         display: none;
     }
 }
+
+
+.bright-font {
+    font-family: "bright" !important;
+}
