@@ -8,3 +8,21 @@
 .img-link:hover {
    transform: scale(1.03);
 }
+
+.only-mobile {
+    display: none;
+}
+
+.only-desktop {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .only-mobile {
+        display: block;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+}
