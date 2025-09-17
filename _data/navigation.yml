@@ -9,9 +9,6 @@ main:
   - title: "Coach Mara"
     url: /coach-mara
     blank: false
-  - title: "Coach Robert"
-    url: /coach-robert
-    blank: false
   - title: "Coach Kilian"
     url: /coach-kilian
     blank: false
