@@ -7,21 +7,21 @@ permalink: /imprint
 <br><br>
 
 #### Anbieter und Verantwortliche Person
-Robert Röder   
-Werner-Erkens Str. 9   
-Frechen, 50226   
-Deutschland
+Mara Hames   
+Stefan-Meier-Str. 47   
+79104 Freiburg   
+Deutschland   
 
 
 #### Kontakt
-e-Mail: robertjulr_at_gmail.com   
+e-Mail: kraftcodes@gmail.com
 
 <br><br>
 
 ## Datenschutzerklärung
 
 #### Geltungsbereich
-Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter Robert Röder auf dieser Website (im folgenden “Angebot”) auf.<br />
+Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter Mara Hames auf dieser Website (im folgenden “Angebot”) auf.<br />
 <br />
 Die rechtlichen Grundlagen des Datenschutzes finden sich in der Datenschutzgrundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).<br />
 <br />
